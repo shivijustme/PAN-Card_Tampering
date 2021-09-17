@@ -2,7 +2,6 @@
 from app import app
 from flask import request, render_template
 import os
-import skimage
 from skimage.metrics import structural_similarity
 import imutils
 import cv2
