@@ -8,7 +8,6 @@ scikit-image==0.17.2
 jupyter==1.0.0
 matplotlib==1.5.3
 numexpr==2.6.1
-numpy==1.12.0
 pandas==0.19.1
 protobuf==3.0.0
 psutil==5.0.0
