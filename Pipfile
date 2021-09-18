@@ -12,6 +12,7 @@ Jinja2 = ">=2.10.1"
 scikit-image = "*"
 imutils = "*"
 opencv-python = "*"
+Pillow = "*"
 
 [dev-packages]
 
