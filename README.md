@@ -6,6 +6,27 @@ Project - 1 <br>
 ## Overview: ##
 The purpose of this project is to detect tampering of PAN card using computer vision. This project will help different organization in detecting whether the Id i.e. the PAN card provided to them by thier employees or customers or anyone is original or not.
 
+### Methodology : <br/> ###
+![1_SBVkh54RJZrMsozG-vQdCQ](https://user-images.githubusercontent.com/48948891/134335724-93e8100e-0c52-4b9e-a1e9-0372769d1eb5.png)<br>
+
+● Loading original and user provided images.<br>
+
+● Converting the format of tampered image similar to original image.<br>
+
+● Checkeing the format and size of the original and tampered image.<br>
+
+● Converting the size of tampered and original image.<br>
+
+● Converting images into grayscale using opencv. Because in image processing many applications doesn't help us in identifying the important, edges of the coloured images also coloured images are bit complex to understand by machine beacuse they have 3 channel while grayscale has only 1 channel.<br>
+
+● Structural similarity index helps us to determine exactly where in terms of x,y coordinates location, the image differences are. Here, we are trying to find similarities between the original and tampered image. The lower the SSIM score lower is the similarity.<br>
+
+● Next we are using the threshold function of computer vision which applies an adaptive threshold to the image which is stored in the form array. This function transforms the grayscale image into a binary image using a mathematical formula.<br>
+
+● Bounding rectangle helps in finding the ratio of width to height of bounding rectangle of the object. We compute the bounding box of the contour and then draw the bounding box on both input images to represent where the two images are different or not.<br>
+
+● Finally we visualized the differences and similarities between the images using by displaying the images with contours, difference and threshold.<br>
+
 ### Live Link: https://pancard-tampering-1.herokuapp.com/ ###
 (Sample Data already enclosed in this github-repo)
 
@@ -31,8 +52,6 @@ Output-2
 -Finding out structural similarity of the images helped us in finding the difference or similarity in the shape of the images. Similarly, finding out the threshold and contours based on those threshold for the images converted into grayscale binary also helped us in shape analysis and recognition.<br>
 
 -As, our SSIM is ~28.5% we can say that the image user provided is fake or tampered.<br>
-
--Finally we visualized the differences and similarities between the images using by displaying the images with contours, difference and threshold.<br>
 
 ### Novelty :<br/> ###
 ●	This project can be used in different organizations where customers or users need to provide any kind of id in order to get themselves verified.<br>
